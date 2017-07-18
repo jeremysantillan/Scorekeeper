@@ -6,15 +6,20 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
-<style name="Button">
-    <item name="android:background">@drawable/circle_bg</item>
-    <item name="android:layout_height">70dp</item>
-    <item name="android:layout_width">70dp</item>
-</style>
 
-    <style name="IC_tint">
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorPrimary</item>
     </style>
+
+    <style name="NightTheme" parent="AppTheme">
+        <item name="android:itemBackground">@color/colorNightBackground</item>
+        <item name="android:colorBackground">@color/colorNightBackground</item>
+        <item name="android:textColor">@color/colorNightText</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">@drawable/circle_bg</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">70dp</item>
+    </style>
+
+
 </resources>
