@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         mFragment_1 = ScoreFragment.newInstance("Team 1");
         mFragment_2 = ScoreFragment.newInstance("Team 2");
 

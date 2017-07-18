@@ -1,7 +1,9 @@
 package tech.hyperdev.scorekeeper.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.IntegerRes;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.ShareCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,6 +73,10 @@ public class ScoreFragment extends Fragment {
         });
 
         getBundle(getArguments());
+
+
+
+
         return view;
     }
 
