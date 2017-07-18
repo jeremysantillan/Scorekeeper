@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import tech.hyperdev.scorekeeper.R;
 import tech.hyperdev.scorekeeper.fragments.ScoreFragment;
@@ -18,14 +19,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mFragment_1 = new ScoreFragment();
-        mFragment_2 = new ScoreFragment();
-
-
+        mFragment_1 = ScoreFragment.newInstance("Team 1");
+        mFragment_2 = ScoreFragment.newInstance("Team 2");
 
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.layout_fragment_1, mFragment_1).replace(R.id.layout_fragment_2, mFragment_2).commit();
-        
+
+
+
+
+
     }
 }
